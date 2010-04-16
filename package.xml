@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+  <name>sfRedisCachePlugin</name>
+  <channel>pear.symfony-project.com</channel>
+  <summary>Cache backend for Redis key/value database</summary>
+  <description>Redis is a high performance cache backend, much better than Memcached and even APC. Use this advantage for with the sfRedisCache class in your factories.</description>
+  <lead>
+    <name>Thomas Parisot</name>
+    <user>oncletom</user>
+    <email>thomas+sf@oncle-tom.net</email>
+    <active>yes</active>
+  </lead>
+  <date>2009-11-28</date>
+  <version>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
+  </version>
+  <stability>
+    <release>stable</release>
+    <api>stable</api>
+  </stability>
+  <license uri="http://www.symfony-project.org/license">MIT license</license>
+  <notes>-</notes>
+  <contents>
+   <dir name="/">
+     
+     <dir name="lib">
+       <dir name="cache">
+         <file name="sfRedisCache.class.php" role="data"/>
+       </dir>
+     </dir>
+
+     <dir name="test">
+       <dir name="bin">
+         <file name="prove.php" role="data"/>
+       </dir>
+       <dir name="bootstrap">
+         <file name="unit.php" role="data"/>
+       </dir>
+       <dir name="unit">
+         <file name="sfCacheDriverTests.class.php" role="data"/>
+         <file name="sfRedisCacheCompiledTest.php" role="data"/>
+         <file name="sfRedisCacheSharedTest.php" role="data"/>
+       </dir>
+     </dir>
+
+     <file name="README" role="data"/>
+     <file name="LICENSE" role="data"/>
+   </dir>
+  </contents>
+  <dependencies>
+    <required>
+      <php>
+        <min>5.2.4</min>
+      </php>
+      <pearinstaller>
+        <min>1.4.1</min>
+      </pearinstaller>
+      <package>
+        <name>symfony</name>
+        <channel>pear.symfony-project.com</channel>
+        <min>1.2.0</min>
+        <max>1.5.0</max>
+        <exclude>1.5.0</exclude>
+      </package>
+    </required>
+  </dependencies>
+  <phprelease></phprelease>
+
+  <changelog>
+    <release>
+     <version>
+       <release>1.0.0</release>
+       <api>1.0.0</api>
+     </version>
+     <stability>
+      <release>stable</release>
+      <api>stable</api>
+     </stability>
+     <license uri="http://www.symfony-project.com/license">MIT license</license>
+     <date>2009-11-28</date>
+     <license>MIT</license>
+     <notes>
+       * oncletom: Initial release
+       * oncletom: Fully unit tested with Debian libphp-redis
+     </notes>
+   </release>
+  </changelog>
+</package>
