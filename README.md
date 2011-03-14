@@ -56,7 +56,7 @@ The main purpose of sfRedisCachePlugin is to use it as a cache backend for your 
 For example:
 
     view_cache:
-      class: sfRedisCachePlugin
+      class: sfRedisCache
       param:
         host:                      127.0.0.1
         mode:                      shared
