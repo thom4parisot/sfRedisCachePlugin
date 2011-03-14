@@ -69,7 +69,7 @@ class sfRedisCache extends sfCache
   {
     $value = $this->redis->get($this->getOption('prefix').$key);
 
-    return null === $value ? $default : $value;
+    return (null === $value or false === $value) ? $default : $value;
   }
 
   /**
