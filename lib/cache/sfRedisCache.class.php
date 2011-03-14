@@ -6,7 +6,7 @@
  * @package    sfRedisCachePlugin
  * @subpackage cache
  * @author     Thomas Parisot <thomas@oncle-tom.net>
- * @version    SVN: $Id$
+ * @version    1.0.1
  */
 class sfRedisCache extends sfCache
 {
