@@ -85,7 +85,7 @@ class sfRedisCache extends sfCache
    */
   public function set($key, $data, $lifetime = null)
   {
-    $lifetime = null === $lifetime ? $this->getOption('lifetime') : $lifetime;
+    $lifetime = (null === $lifetime) ? $this->getOption('lifetime') : $lifetime;
 
     if ($lifetime < 1)
     {
